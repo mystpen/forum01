@@ -1,0 +1,60 @@
+{{template "base" .}}
+
+<body>
+  <nav class="navbar navbar-default">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">FORUM</a>
+    </div>
+  </nav>
+   
+  <div class="col-sm-4"></div>
+  <div class="container col-sm-4">
+    <form method="POST" class="form-horizontal">
+
+      <fieldset>
+        <legend>Sign in</legend>
+        {{if .Errtext}}
+        <div class="alert alert-warning">
+          {{.Errtext}}
+        </div>
+        {{end}}
+        
+        <div class="form-group">
+          <label for="username">Username:</label>
+          <input type="text" name="username" class="form-control" id="username" maxlength="20" placeholder="Enter username"required>
+          
+        </div>
+        <div class="form-group">
+          <label for="password">Password:</label>
+          <input type="password" name="password" class="form-control" id="password" placeholder="Enter password" required>
+          
+        </div>
+        
+        <input type="submit" value="Submit" class="btn btn-info">
+        <input type="reset" class="btn btn-info">
+        <div class="text-right">Don't have an account? <a href="/signup" class="btn btn-info" role="button">Sign up</a></div>
+      </fieldset>
+
+    </form>
+   
+    
+  </div>
+  <div class="col-sm-4"></div>
+  <!-- <div class="container">
+    <h1>Sign in</h1>
+    <form method="post" action="/">
+      <div class="form-group">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" placeholder="Enter username" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" autocomplete="off" placeholder="Enter password" required>
+      </div>
+    
+        <button type="button">Sign in</button>
+    </form>
+  </div> -->
+
+</body>
+</html>
