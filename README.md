@@ -23,11 +23,11 @@ Project should have Likies, Dislikes, Comments and filter
 
 
 ## Authors
-@dokshiye, @dtyuligu nd @szhigero
+@mystpen, @dtyuligu and @szhigero
 
 ## Usage
 ```
-$ git clone git@git.01.alem.school:szhigero/forum.git
+$ git clone git@github.com:mystpen/forum01.git
 ```
 To run using docker:
 ```make run```
